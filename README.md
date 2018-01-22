@@ -25,7 +25,7 @@ $ composer install
 之后添加autoloader:
 ```php
 <?php
-require 'vendor/autoload.php';
+require "vendor/autoload.php";
 ```
 
 # 使用
@@ -33,17 +33,17 @@ require 'vendor/autoload.php';
 ```php
 use Fatevent\Fatevent;
 
-Fatevent::on('test.test',
+Fatevent::on("test.test",
     function($eventData, $defaultData){
         //do something
     },
-    'default data');
+    "default data");
 ```
 
 以上代码监听了`test.test`事件。接下来，在需要的地方触发对应的事件：
 ```php
 use Fatevent\Fatevent;
-Fatevent::trigger('test.test', 'event data');
+Fatevent::trigger("test.test", "event data");
 ```
 
 此时，之前附加的处理函数便会执行。在接下来的几个小节中，会详细的介绍使用的场景及函数。
