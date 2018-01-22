@@ -102,7 +102,7 @@ class Fatevent
                     unset(self::$events[$name][$i]);
                     $removed = true;
                 }
-                if (! $result) {
+                if ($result === false) {
                     break;
                 }
             }
