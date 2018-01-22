@@ -22,5 +22,10 @@
             "Fatevent\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Fatevent\\Tests\\": "tests/"
+        }
+    },
     "prefer-stable": true
 }
